@@ -1,0 +1,29 @@
+{
+  "name": "restaraunt",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treymorris/restaraunt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/treymorris/restaraunt/issues"
+  },
+  "homepage": "https://github.com/treymorris/restaraunt#readme",
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "webpack": "^5.60.0"
+  }
+}

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkorange;
+}
+
+li {
+    list-style: none;  
+}
+
+#content {
+    background-color: darkolivegreen;
+    width: 100%;
+}
+
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs {
+    background-color: blanchedalmond;
+    padding: 1em;
+    width: 85px;
+    border: solid 1px black;
+    margin: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    height: 850px;
+    margin: auto;
+    background-color: darkslategrey;
+    border-radius: 20px;
+}
+
+.main-page-boxes {
+    padding: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    border: solid 2px black;
+    width: 450px;
+    margin-top: 25px;    
+    background-color: floralwhite;
+}
+
