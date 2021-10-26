@@ -70,7 +70,7 @@ a {
     display: flex;
     justify-content: center;
     width: 850px;
-    height: 975px;
+    
     margin: auto;
     background-color: blanchedalmond;
     border-radius: 20px;
@@ -133,3 +133,26 @@ a {
     margin-top: 45px;
 }
 
+.small-box {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.25rem;
+    border: solid 2px black;
+    width: 450px;
+    margin-top: 65px;    
+    background-color: floralwhite;
+    border-radius: 10px;
+}
+
+.big-box {
+    padding: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border: solid 2px black;
+    width: 450px;
+    height: 450px;
+    margin-top: 35px;  
+    margin-bottom: 35px;  
+    background-color: floralwhite;
+    border-radius: 10px;
+}
