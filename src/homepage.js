@@ -9,30 +9,27 @@ function createTabs() {
     const tab1 = document.createElement('button');
     tab1.setAttribute('type', 'button');
     tab1.id = 'tab1';
-    tab1.classList.add('tab1');
+    tab1.classList.add('tab');
     tabsContainer.appendChild(tab1);
     tab1.textContent = 'Home';
 
     const tab2 = document.createElement('button');
     tab2.setAttribute('type', 'button');
     tab2.id = 'tab2';
-    tab2.classList.add('tab2');
+    tab2.classList.add('tab');
     tabsContainer.appendChild(tab2);
     tab2.textContent = 'Menu'
 
     const tab3 = document.createElement('button');
     tab3.setAttribute('type', 'button');
     tab3.id = 'tab3';
-    tab3.classList.add('tab3');
+    tab3.classList.add('tab');
     tabsContainer.appendChild(tab3);
     tab3.textContent = 'Contact'
 
 }
 
 function createMainPage() {
-
-   //const tabs = document.getElementById('tab3');
-    //tabs.removeChild(content.firstChild);
 
     const container = document.createElement('div');
     container.id = 'container';
@@ -101,7 +98,6 @@ function createMainPage() {
     li7.classList.add('li');
     hoursBox.appendChild(li7);
     li7.textContent = 'Sunday: 1pm - 10pm';
-
 }
 
 function createFooter() {

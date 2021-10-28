@@ -3,7 +3,11 @@
 }
 
 body {
-    background-color: darkolivegreen;
+    /*background-color: darkolivegreen;*/
+    background: url('./background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 ul {
@@ -16,49 +20,26 @@ li {
 }
 
 a {
-    color: red;
+    color: black;
     padding-top: 10px;
 }
 
-#content {
-    background-color: darkolivegreen;
+/*#content {
     width: 100%;
-}
+}*/
 
 .tabs-container {
     display: flex;
     justify-content: center;
 }
 
-.tab1 {
+.tab {
     background-color: blanchedalmond;
     padding: 15px;
-    width: 85px;
+    width: 95px;
     border-top: solid 1px black;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.tab2 {
-    background-color: blanchedalmond;
-    padding: 15px;
-    width: 85px;
-    border: solid 1px black;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.tab3 {
-    background-color: blanchedalmond;
-    padding: 15px;
-    width: 85px;
-    border: solid 1px black;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -69,8 +50,7 @@ a {
 .container {
     display: flex;
     justify-content: center;
-    width: 850px;
-    
+    width: 750px;
     margin: auto;
     background-color: blanchedalmond;
     border-radius: 20px;
@@ -140,7 +120,7 @@ a {
     font-size: 1.25rem;
     border: solid 2px black;
     width: 450px;
-    margin-top: 65px;    
+    margin-top: 25px;    
     background-color: floralwhite;
     border-radius: 10px;
 }
@@ -151,8 +131,8 @@ a {
     font-size: 1rem;
     border: solid 2px black;
     width: 450px;
-    height: 450px;
-    margin-top: 35px;  
+    height: 150px;
+    margin-top: 10px;  
     margin-bottom: 35px;  
     background-color: floralwhite;
     border-radius: 10px;
@@ -164,8 +144,8 @@ a {
     font-size: 1rem;
     border: solid 2px black;
     width: 450px;
-    height: 300px;
-    margin-top: 35px;  
+    height: 200px;
+    margin-top: 25px;  
     margin-bottom: 35px;  
     background-color: floralwhite;
     border-radius: 10px;
