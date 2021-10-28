@@ -119,7 +119,8 @@ a {
     font-size: 1.25rem;
     border: solid 2px black;
     width: 450px;
-    margin-top: 35px;    
+    margin-top: 35px;
+    margin-bottom: 20px;    
     background-color: floralwhite;
     border-radius: 10px;
 }

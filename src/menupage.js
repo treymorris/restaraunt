@@ -1,88 +1,96 @@
 const content = document.getElementById('content');
  
-const tabsContainer = document.createElement('div');
+/*const tabsContainer = document.createElement('div');
 tabsContainer.classList.add('tabs-container');
 content.appendChild(tabsContainer);
 
-const tab1 = document.createElement('div');
+const tab1 = document.createElement('button');
+tab1.setAttribute('type', 'button');
 tab1.classList.add('tab1');
 tabsContainer.appendChild(tab1);
 tab1.textContent = 'Home';
 
-const tab2 = document.createElement('div');
+const tab2 = document.createElement('button');
+tab2.setAttribute('type', 'button');
 tab2.classList.add('tab2');
 tabsContainer.appendChild(tab2);
 tab2.textContent = 'Menu'
 
-const tab3 = document.createElement('div');
+const tab3 = document.createElement('button');
+tab3.setAttribute('type', 'button');
 tab3.classList.add('tab3');
 tabsContainer.appendChild(tab3);
-tab3.textContent = 'Contact'
+tab3.textContent = 'Contact'*/
 
-const container = document.createElement('div');
-container.classList.add('container');
-content.appendChild(container);
+function createMenuPage() {
 
-const mainPage = document.createElement('div');
-mainPage.classList.add('main-page');
-container.appendChild(mainPage);
+    const container = document.createElement('div');
+    container.classList.add('container');
+    content.appendChild(container);
 
-const menuPageBox1 = document.createElement('div');
-menuPageBox1.classList.add('main-page-box1');
-mainPage.appendChild(menuPageBox1);
-menuPageBox1.textContent = 'Menu';
+    const mainPage = document.createElement('div');
+    mainPage.classList.add('main-page');
+    container.appendChild(mainPage);
 
-const menuPageBox2 = document.createElement('div');
-menuPageBox2.classList.add('small-box');
-mainPage.appendChild(menuPageBox2);
-menuPageBox2.textContent = 'Appetizers';
+    const menuPageBox1 = document.createElement('div');
+    menuPageBox1.classList.add('main-page-box1');
+    mainPage.appendChild(menuPageBox1);
+    menuPageBox1.textContent = 'Menu';
 
-const menuPageBox3 = document.createElement('div');
-menuPageBox3.classList.add('big-box');
-mainPage.appendChild(menuPageBox3);
-menuPageBox3.textContent = 'Oysters ala fornio';
+    const menuPageBox2 = document.createElement('div');
+    menuPageBox2.classList.add('small-box');
+    mainPage.appendChild(menuPageBox2);
+    menuPageBox2.textContent = 'Appetizers';
 
-const menuPageBox4 = document.createElement('div');
-menuPageBox4.classList.add('small-box');
-mainPage.appendChild(menuPageBox4);
-menuPageBox4.textContent = 'Salads';
+    const menuPageBox3 = document.createElement('div');
+    menuPageBox3.classList.add('big-box');
+    mainPage.appendChild(menuPageBox3);
+    menuPageBox3.textContent = 'Oysters ala fornio';
 
-const menuPageBox5 = document.createElement('div');
-menuPageBox5.classList.add('big-box');
-mainPage.appendChild(menuPageBox5);
-menuPageBox5.textContent = 'Insalata Caprese';
+    const menuPageBox4 = document.createElement('div');
+    menuPageBox4.classList.add('small-box');
+    mainPage.appendChild(menuPageBox4);
+    menuPageBox4.textContent = 'Salads';
 
-const menuPageBox6 = document.createElement('div');
-menuPageBox6.classList.add('small-box');
-mainPage.appendChild(menuPageBox6);
-menuPageBox6.textContent = 'Entrees';
+    const menuPageBox5 = document.createElement('div');
+    menuPageBox5.classList.add('big-box');
+    mainPage.appendChild(menuPageBox5);
+    menuPageBox5.textContent = 'Insalata Caprese';
 
-const menuPageBox7 = document.createElement('div');
-menuPageBox7.classList.add('big-box');
-mainPage.appendChild(menuPageBox7);
-menuPageBox7.textContent = 'Osso Bucco';
+    const menuPageBox6 = document.createElement('div');
+    menuPageBox6.classList.add('small-box');
+    mainPage.appendChild(menuPageBox6);
+    menuPageBox6.textContent = 'Entrees';
 
-const menuPageBox8 = document.createElement('div');
-menuPageBox8.classList.add('small-box');
-mainPage.appendChild(menuPageBox8);
-menuPageBox8.textContent = 'Desserts';
+    const menuPageBox7 = document.createElement('div');
+    menuPageBox7.classList.add('big-box');
+    mainPage.appendChild(menuPageBox7);
+    menuPageBox7.textContent = 'Osso Bucco';
 
-const menuPageBox9 = document.createElement('div');
-menuPageBox9.classList.add('big-box');
-mainPage.appendChild(menuPageBox9);
-menuPageBox9.textContent = 'Tira Misu';
+    const menuPageBox8 = document.createElement('div');
+    menuPageBox8.classList.add('small-box');
+    mainPage.appendChild(menuPageBox8);
+    menuPageBox8.textContent = 'Desserts';
 
-const menuPageBox10 = document.createElement('div');
-menuPageBox10.classList.add('small-box');
-mainPage.appendChild(menuPageBox10);
-menuPageBox10.textContent = 'Beverages';
+    const menuPageBox9 = document.createElement('div');
+    menuPageBox9.classList.add('big-box');
+    mainPage.appendChild(menuPageBox9);
+    menuPageBox9.textContent = 'Tira Misu';
 
-const menuPageBox11 = document.createElement('div');
-menuPageBox11.classList.add('big-box');
-mainPage.appendChild(menuPageBox11);
-menuPageBox11.textContent = 'Wine';
+    const menuPageBox10 = document.createElement('div');
+    menuPageBox10.classList.add('small-box');
+    mainPage.appendChild(menuPageBox10);
+    menuPageBox10.textContent = 'Beverages';
 
-const footer = document.createElement('div');
+    const menuPageBox11 = document.createElement('div');
+    menuPageBox11.classList.add('big-box');
+    mainPage.appendChild(menuPageBox11);
+    menuPageBox11.textContent = 'Wine';
+
+}
+
+
+/*const footer = document.createElement('div');
 footer.classList.add('footer');
 content.appendChild(footer);
 
@@ -102,4 +110,8 @@ const footerLink3 = document.createElement('a');
 footerLink3.setAttribute('href', "yourlink.here");
 footerLink3.classList.add('footer-link3');
 footer.appendChild(footerLink3);
-footerLink3.innerText = 'or click me';
+footerLink3.innerText = 'or click me';*/
+
+export {
+    createMenuPage
+}
