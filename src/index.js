@@ -11,8 +11,9 @@ createFooter();
 
 function addingListeners() {
 
-    const homeTab = document.getElementById('tab1');
-    homeTab.addEventListener('click', () => {
+    const tab = document.querySelectorAll('button');
+    
+    tab[0].addEventListener('click', () => {
         clearCurrentContent();
         createTabs();
         addingListeners();
@@ -20,8 +21,7 @@ function addingListeners() {
         createFooter();
     });
 
-    const menuTab = document.getElementById('tab2');
-    menuTab.addEventListener('click', () => {
+    tab[1].addEventListener('click', () => {
         clearCurrentContent()
         createTabs()
         addingListeners();
@@ -29,8 +29,7 @@ function addingListeners() {
         createFooter();
     });
 
-    const contactTab = document.getElementById('tab3');
-    contactTab.addEventListener('click', () => {
+    tab[2].addEventListener('click', () => {
         clearCurrentContent()
         createTabs()
         addingListeners();
