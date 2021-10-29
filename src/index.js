@@ -3,24 +3,20 @@ import { createMainPage, createTabs, createFooter } from './homepage';
 import { createMenuPage } from './menupage';
 import { createContactPage } from './contactpage';
 
-
 createTabs();
 addingListeners();
 createMainPage();
 createFooter();
 
 function addingListeners() {
-
     const tab = document.querySelectorAll('button');
-    
-    tab[0].addEventListener('click', () => {
+    tab[0].addEventListener('click', () => {    
         clearCurrentContent();
         createTabs();
         addingListeners();
         createMainPage();
         createFooter();
     });
-
     tab[1].addEventListener('click', () => {
         clearCurrentContent()
         createTabs()
@@ -28,7 +24,6 @@ function addingListeners() {
         createMenuPage()
         createFooter();
     });
-
     tab[2].addEventListener('click', () => {
         clearCurrentContent()
         createTabs()
@@ -36,12 +31,9 @@ function addingListeners() {
         createContactPage()
         createFooter();
     });
-
 }
 
 function clearCurrentContent() {
-    
     const currentContent = document.getElementById('content');
-    currentContent.replaceChildren();
-    
+    currentContent.replaceChildren();   
 }

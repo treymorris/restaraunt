@@ -1,24 +1,22 @@
-const content = document.getElementById('content');
- 
 function createTabs() {
-
+    const content = document.getElementById('content');
     const tabsContainer = document.createElement('div');
     tabsContainer.classList.add('tabsContainer');
     content.appendChild(tabsContainer);
     
     for (let i = 0; i < 3; i++) {
-        const content = ['Home', 'Menu', 'Contact'];
+        const tabContent = ['Home', 'Menu', 'Contact'];
         const tab = document.createElement('button');
         tab.setAttribute('type', 'button');
         tab.id = 'tab';
         tab.classList.add('tab');
         tabsContainer.appendChild(tab);
-        tab.textContent = content[i];
+        tab.textContent = tabContent[i];
         }
 }
 
 function createMainPage() {
-
+    const content = document.getElementById('content');
     const container = document.createElement('div');
     container.id = 'container';
     container.classList.add('container');
@@ -58,18 +56,16 @@ function createMainPage() {
         li.classList.add('li');
         hoursBox.appendChild(li);
         li.textContent = hours[i];
-    
     }
 }
 
 function createFooter() {
-
+    const content = document.getElementById('content');
     const footer = document.createElement('div');
     footer.classList.add('footer');
     content.appendChild(footer);
 
     for (let i=0; i < 3; i++) {
-
         const text = ['click me', 'click me', 'click me'];
         const footerLink = document.createElement('a');
         footerLink.setAttribute('href', "yourlink.here");
