@@ -25,6 +25,10 @@ a {
     border-radius: 20px;
 }
 
+button {
+   border: none;
+}
+
 .tabsContainer {
     display: flex;
     justify-content: center;
@@ -34,14 +38,16 @@ a {
     background-color: blanchedalmond;
     padding: 15px;
     width: 95px;
-    border-top: solid 1px black;
-    border-right: solid 1px black;
-    border-left: solid 1px black;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom: solid 1px black;
+}
+
+.tab:active {
+    border-bottom: none;
 }
 
 .container {
