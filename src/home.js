@@ -1,21 +1,5 @@
-function createTabs() {
-    const content = document.getElementById('content');
-    const tabsContainer = document.createElement('div');
-    tabsContainer.classList.add('tabsContainer');
-    content.appendChild(tabsContainer);
+function createHomePage() {
     
-    for (let i = 0; i < 3; i++) {
-        const tabContent = ['Home', 'Menu', 'Contact'];
-        const tab = document.createElement('button');
-        tab.setAttribute('type', 'button');
-        tab.id = 'tab';
-        tab.classList.add('tab');
-        tabsContainer.appendChild(tab);
-        tab.textContent = tabContent[i];
-        }
-}
-
-function createMainPage() {
     const content = document.getElementById('content');
     const container = document.createElement('div');
     container.id = 'container';
@@ -59,23 +43,4 @@ function createMainPage() {
     }
 }
 
-function createFooter() {
-    const content = document.getElementById('content');
-    const footer = document.createElement('div');
-    footer.classList.add('footer');
-    content.appendChild(footer);
-
-    for (let i=0; i < 3; i++) {
-        const text = ['click me', 'click me', 'click me'];
-        const footerLink = document.createElement('a');
-        footerLink.setAttribute('href', "yourlink.here");
-        footer.appendChild(footerLink);
-        footerLink.textContent = text[i];
-    }
-}
-
-export {
-    createTabs,
-    createMainPage,
-    createFooter
-}
+export { createHomePage }

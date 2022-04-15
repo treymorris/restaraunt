@@ -1,11 +1,11 @@
 import './style.css';
-import { createMainPage, createTabs, createFooter } from './homepage';
-import { createMenuPage } from './menupage';
-import { createContactPage } from './contactpage';
+import { createHomePage } from './home';
+import { createMenuPage } from './menu';
+import { createContactPage } from './contact';
 
 createTabs();
 addingListeners();
-createMainPage();
+createHomePage();
 createFooter();
 
 function addingListeners() {
@@ -14,7 +14,7 @@ function addingListeners() {
         clearCurrentContent();
         createTabs();
         addingListeners();
-        createMainPage();
+        createHomePage();
         createFooter();
     });
     tab[1].addEventListener('click', () => {
@@ -36,4 +36,36 @@ function addingListeners() {
 function clearCurrentContent() {
     const currentContent = document.getElementById('content');
     currentContent.replaceChildren();   
+}
+
+function createTabs() {
+    const content = document.getElementById('content');
+    const tabsContainer = document.createElement('div');
+    tabsContainer.classList.add('tabsContainer');
+    content.appendChild(tabsContainer);
+    
+    for (let i = 0; i < 3; i++) {
+        const tabContent = ['Home', 'Menu', 'Contact'];
+        const tab = document.createElement('button');
+        tab.setAttribute('type', 'button');
+        tab.id = 'tab';
+        tab.classList.add('tab');
+        tabsContainer.appendChild(tab);
+        tab.textContent = tabContent[i];
+        }
+}
+
+function createFooter() {
+    const content = document.getElementById('content');
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+    content.appendChild(footer);
+
+    for (let i=0; i < 3; i++) {
+        const text = ['click me', 'click me', 'click me'];
+        const footerLink = document.createElement('a');
+        footerLink.setAttribute('href', "yourlink.here");
+        footer.appendChild(footerLink);
+        footerLink.textContent = text[i];
+    }
 }
