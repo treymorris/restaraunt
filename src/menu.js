@@ -1,18 +1,10 @@
 function createMenuPage() {
 
-    const content = document.getElementById('content');
-    const container = document.createElement('div');
-    container.id = 'container';
-    container.classList.add('container');
-    content.appendChild(container);
-    // const menu = document.createElement('div');
-    // menu.classList.add('container');
-    // content.appendChild(menu);
+    
 
     const menu = document.createElement('div');
     menu.classList.add('mainPage');
-    //container.appendChild(menu);
-    container.appendChild(menu);
+    
 
     menu.appendChild(
         createItem(
@@ -69,4 +61,13 @@ function createItem(name, description) {
     return item;
 }
 
-export { createMenuPage }
+function loadMenuPage() {
+    const content = document.getElementById('content');
+
+    const container = document.createElement('div');
+    container.id = 'container';
+    container.classList.add('container');
+    content.appendChild(container);
+    container.appendChild(createMenuPage());
+}
+export { loadMenuPage }

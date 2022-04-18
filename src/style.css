@@ -47,11 +47,11 @@ a {
 .container {
     display: flex;
     justify-content: center;
-    width: 750px;
+    max-width: 750px;
     margin: auto;
     background-color: blanchedalmond;
     border-radius: 20px;
-    overflow: auto;
+    min-height: 100vh;
 }
 
 .mainPage {

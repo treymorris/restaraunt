@@ -1,34 +1,36 @@
 function createContactPage() {
 
+    
+const contactPageBox1 = document.createElement('div');
+    contactPageBox1.classList.add('mainPageBox1');
+    contactPageBox1.textContent = 'Contact Us'
+
+    const phoneNum = document.createElement('p');
+    phoneNum.textContent = 'Call Us 900 867 5309';
+
+    const address = document.createElement('p');
+    address.textContent = '101 Main Street, Anytown, USA';
+
+    const location = document.createElement('img');
+    location.src = '';
+    location.alt = '';
+
+    contactPageBox1.appendChild(phoneNum);
+    contactPageBox1.appendChild(address);
+    contactPageBox1.appendChild(location);
+
+    return contactPageBox1;
+}
+
+function loadContactPage() {
     const content = document.getElementById('content');
     const container = document.createElement('div');
     container.classList.add('container');
     content.appendChild(container);
-
     const mainPage = document.createElement('div');
     mainPage.classList.add('mainPage');
     container.appendChild(mainPage);
-
-    const contactPageBox1 = document.createElement('div');
-    contactPageBox1.classList.add('mainPageBox1');
-    mainPage.appendChild(contactPageBox1);
-    contactPageBox1.textContent = 'Contact Us';
-
-    const contactPageBox2 = document.createElement('div');
-    contactPageBox2.classList.add('card');
-    mainPage.appendChild(contactPageBox2);
-    contactPageBox2.textContent = 'Contact 1';
-
-    const contactPageBox3 = document.createElement('div');
-    contactPageBox3.classList.add('card');
-    mainPage.appendChild(contactPageBox3);
-    contactPageBox3.textContent = 'Contact 2';
-
-    const contactPageBox4 = document.createElement('div');
-    contactPageBox4.classList.add('card');
-    mainPage.appendChild(contactPageBox4);
-    contactPageBox4.textContent = 'Contact 3';
-
+    mainPage.appendChild(createContactPage());
 }
 
-export { createContactPage }
+export { loadContactPage }

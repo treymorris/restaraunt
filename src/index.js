@@ -1,7 +1,7 @@
 import './style.css';
 import { createHomePage } from './home';
-import { createMenuPage } from './menu';
-import { createContactPage } from './contact';
+import { loadMenuPage } from './menu';
+import { loadContactPage } from './contact';
 
 createTabs();
 addingListeners();
@@ -21,14 +21,14 @@ function addingListeners() {
         clearCurrentContent()
         createTabs()
         addingListeners();
-        createMenuPage()
+        loadMenuPage()
         createFooter();
     });
     tab[2].addEventListener('click', () => {
         clearCurrentContent()
         createTabs()
         addingListeners();
-        createContactPage()
+        loadContactPage()
         createFooter();
     });
 }
