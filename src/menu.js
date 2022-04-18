@@ -1,11 +1,7 @@
 function createMenuPage() {
-
-    
-
     const menu = document.createElement('div');
     menu.classList.add('mainPage');
     
-
     menu.appendChild(
         createItem(
             'Oysters ala fornio',
@@ -62,12 +58,9 @@ function createItem(name, description) {
 }
 
 function loadMenuPage() {
-    const content = document.getElementById('content');
-
-    const container = document.createElement('div');
-    container.id = 'container';
-    container.classList.add('container');
-    content.appendChild(container);
-    container.appendChild(createMenuPage());
+    const main = document.getElementById('main');
+    main.textContent = '';
+    main.appendChild(createMenuPage())
 }
+
 export { loadMenuPage }
