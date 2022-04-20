@@ -76,14 +76,18 @@ function createMain() {
 function createFooter() {
     const footer = document.createElement('div');
     footer.classList.add('footer');
+    
     const footerLink = document.createElement('a');
-    footerLink.href = '';
-    footerLink.textContent = 'Click Me'
+    footerLink.href = 'https://github.com/treymorris';
 
     const footerIcon = document.createElement('i');
-    footerIcon.classList.add('fab');
-    footerIcon.classList.add('fa-something');
+    footerIcon.classList.add('fa-brands');
+    footerIcon.classList.add('fa-github');
+    footerIcon.classList.add('fa-lg');
+
     footer.appendChild(footerLink);
+    footerLink.appendChild(footerIcon);
+
     return footer;
 
 }

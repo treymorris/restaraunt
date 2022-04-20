@@ -1,31 +1,37 @@
+:root {
+    --font-color: aliceblue;
+    --border-color: rgb(231, 227, 227);
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-dark: rgba(0, 0, 0, 0.8);
+}
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background: url('./background-image.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--background-dark);
     text-align: center;
-    padding-top: 1em;
-    border-radius: 20px;
+    padding-top: .5em;
+   
 }
 
 .name {
     margin-top: 1em;
-    color:aliceblue;
+    color:var(--font-color);
 }
 
 a {
-    color: aliceblue;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 20px;
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 .navBar {
@@ -34,81 +40,71 @@ a {
 }
 
 .tab {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: aliceblue;
+    background-color: transparent;
+    color: var(--font-color);
     padding: 1em;
     border-style: none;
-    margin-top: 1em;
     margin-right: 2em;
     margin-bottom: 2em;
 }
 
 .tab.active {
-    background-color:red;
+    border-bottom: solid 2px aliceblue;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    max-width: 750px;
-    margin: auto;
-    background-color: aliceblue;
-    border-radius: 20px;
-    min-height: 100vh;
+.main {
+    min-height: calc(100vh - 70px);
+    border: 1px solid var(--border-color);
 }
 
-.mainPage {
-    font-size: 22px;
-}
-
-.homePage {
-    padding: 30px;
+.home {
+    padding: 2em;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5em;
     border: solid 2px black;
-    width: 850px;
-    margin-top: 45px;    
-    background-color: rgba(0, 0, 0, 0.9);
-    color:aliceblue;
-    border-radius: 20px;
+    width: 40vw;
+    margin-top: 3em;  
+    background-color: var(--background-dark);
+    color: var(--font-color);
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid var(--border-color);
 }
 
-.mainPageBox2 {
-    font-size: 1rem;
-    margin-top: 65px;    
-}
-
-.mainPageBox3 {
-    padding: 40px;
-    font-size: 1.25rem;
-    margin-top: 35px;    
-}
-
-.mainPageBox4 {
-    padding: 40px;
-    font-size: 1.25rem;
-    margin-top: 35px;
-    margin-bottom: 20px;    
+.home img {
+    width: 40%;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    height: 50px; 
-    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background-light);
+    padding: 1rem;
+    height: 50px;
 }
 
 .card {
-    padding: 40px;
+    padding: 2em;
     font-size: 1rem;
-    margin-top: 30px;  
-    margin-bottom: 35px;  
+    margin-top: 2em;  
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    border: solid 2px black;
-    background-color: aliceblue;
-    border-radius: 10px;
-    width: 450px;
+    background-color: var(--background-dark);
+    color: var(--font-color);
+    width: 35vw;
+    border: 1px solid var(--border-color);
+}
+
+.card img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }

@@ -1,17 +1,17 @@
 function createContactPage() {
 
     const contact = document.createElement('div');
-    contact.classList.add('mainPageBox1');
-    contact.textContent = 'Contact Us'
+    contact.classList.add('card');
+    contact.textContent = 'Contact us for reservations.'
 
     const phoneNum = document.createElement('p');
-    phoneNum.textContent = 'Call Us 900 867 5309';
+    phoneNum.textContent = 'Phone 900 867 5309';
 
     const address = document.createElement('p');
     address.textContent = '101 Main Street, Anytown, USA';
 
     const location = document.createElement('img');
-    location.src = '';
+    location.src = 'https://previews.123rf.com/images/vadmary/vadmary1302/vadmary130200032/17960630-street-map-with-gps-icons-navigation.jpg';
     location.alt = '';
 
     contact.appendChild(phoneNum);
