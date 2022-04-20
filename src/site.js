@@ -76,7 +76,7 @@ function createMain() {
 function createFooter() {
     const footer = document.createElement('div');
     footer.classList.add('footer');
-    
+
     const footerLink = document.createElement('a');
     footerLink.href = 'https://github.com/treymorris';
 
