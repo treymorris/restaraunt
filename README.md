@@ -1,6 +1,6 @@
 # restaurant
 
-This is another project from The Odin Project Curriculum.
+This is a project from The Odin Project Curriculum.
 
 Features
 --------
