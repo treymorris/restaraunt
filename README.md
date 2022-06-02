@@ -9,5 +9,6 @@ In this project I continued practicing DOM manipulation by dynamically generatin
 
 By utilizing Webpack I was able to set up tabbed browsing for this site.
 
-Installation
+Live Preview
 ------------
+ https://treymorris.github.io/restaurant/
